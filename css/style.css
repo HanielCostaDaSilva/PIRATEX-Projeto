@@ -1,0 +1,116 @@
+/*Elementos basicos */
+@import url(owl/owl.carousel.min.css);
+@import url(owl/owl.theme.default.min.css);
+:root{
+    --azulEscuro:#3971D8;
+    --preto: hsl(0, 0%, 8%);
+    --cinza: #28292C;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body{
+    background-color: var(--preto);
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Cabeçalho*/
+header{
+    color: var(--azulEscuro);
+}
+
+header .container{  
+    border: 1px solid var(--cinza);
+}
+
+header #logo{
+    font-size: 40px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header nav a {
+    font-size: 20px;
+    margin-right: 10px;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(35, 35, 224);
+}
+
+a:hover{
+    text-decoration:dotted;
+    color: red;
+}
+/*Filme em destaque*/
+
+.Titulo{
+    margin-top: 5%;
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+}
+.filmePrincipal{
+    background: linear-gradient(rgb(0,0,0,.5),rgb(0,0,0,.5) 100%),url("../img/capa.png");
+    font-size: 16px;
+    height: 400px;
+    background-size:cover;    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+.filmePrincipal .descricao{
+    margin-bottom: 40px;
+}
+/*Botões*/
+.botao{
+    font-family:'Lato', sans-serif;
+    border: none;
+    background-color: rgb(255,255,255,.5);
+    margin-right: 20px;
+    font-size: 12px;
+    padding: 15px 30px;
+    cursor: pointer;
+
+}
+.botao:hover{
+    background-color: var(--azulEscuro);
+    color: var(--preto);
+    font-style: bolder;
+}
+.botao:active{
+    background-color: rgb(6, 6, 41);
+    color: rgb(242, 247, 247);
+}
+.icone{
+    font-size: 1.1rem;
+    padding-right: 5px;
+}
+/* Filmes em rolagem*/
+.carrosel-filmes{
+    height: 100cm;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+.box-filmes :hover{
+    border: solid white 15px;
+}
